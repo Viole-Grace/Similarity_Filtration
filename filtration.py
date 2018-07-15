@@ -9,8 +9,10 @@ import statsmodels.api as sm
 #from Data import givenset
 
 # flipkart uses user-user based Cosine Similarity function. Then if one item matches it after a recommendation, that very user is recommended to it.
-# Each user has been given 9 items to evaluate. User that hasnt evaluated an item rates it '0'. Scale is out of 5.
+# Each user has been given 'n' items to evaluate. 
+#User that hasnt evaluated an item rates it '0'. Scale is out of 5.
 # R here shows sample data. This can be extracted from any Data module with values.
+# This can be used as a hybrid filter for a recommendation system as well
 
 #sample array
 R = np.array([  
